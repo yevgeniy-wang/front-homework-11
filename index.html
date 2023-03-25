@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lead Injection</title>
+    <link href="./styles/style.css" rel="stylesheet">
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<header>
+    <div class="head">
+        <div class="head__logo logo">
+            <img alt="logo" src="./gallery/circle.png">
+            <span><b>Lead</b>injection</span>
+        </div>
+        <nav>
+            <ul class="head__socials socials">
+                <li class="socials-item"><a href="#"><img alt="twitter" src="./gallery/twitter.svg"></a></li>
+                <li class="socials-item"><a href="#"><img alt="facebook" src="./gallery/facebook.svg"></a></li>
+                <li class="socials-item"><a href="#"><img alt="instagram" src="./gallery/instagram.svg"></a></li>
+                <li class="socials-item"><a href="#"><img alt="behance" src="./gallery/behance.svg"></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navigation">
+        <nav>
+            <ul class="navigation__menu menu">
+                <li class="menu__item"><a href="#">Home</a></li>
+                <li class="menu__item"><a href="#">How it works</a></li>
+                <li class="menu__item"><a href="#">Recipes</a></li>
+                <li class="menu__item"><a href="#">Reviews</a></li>
+                <li class="menu__item"><a href="#">Program</a></li>
+                <li class="menu__item"><a href="#">Princing</a></li>
+                <li class="menu__item dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Blog <img src="./gallery/arrow.svg" alt="arrow"></button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="navigation__contacts contacts">
+            <a href="tel:+380951363424">+380951363424</a>
+            <a href="mailto:leadInjection@mail.ru">leadInjection@mail.ru</a>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="lady">
+        <div class="lady__call-to-action call-to-action">
+            <h1 class="call-to-action__heading ">Get In Shape Faster</h1>
+            <h1 class="call-to-action__heading call-to-action__heading--bold">Live Your happy Life</h1>
+            <p class="call-to-action__par">It is a long established fact that a reader will be distracted by the
+                readable
+                content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it
+                look like readable English.</p>
+            <div class="call-to-action__btn-box btn-box">
+                <button class="btn-box__btn btn-box__btn--red">Start Your Jorney Today</button>
+                <button class="btn-box__btn btn-box__btn--green">Find Out More</button>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works">
+        <h1 class="how-it-works__heading">How It Works</h1>
+        <h2 class="how-it-works__heading2">3 Important Steps to Lose Healthy and Durable Your Weight</h2>
+        <ul class="how-it-works__steps steps">
+            <li class="steps__box">
+                <span>1</span>
+                <div class="steps__step">
+                    <h3>Eleminate Sugars and Starches</h3>
+                    <p>One of the most important part.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec. Lorem ipsum dolor sit amet,
+                        consectetur adipiscin elit.</p>
+                </div>
+            </li>
+            <li class="steps__box">
+                <span>2</span>
+                <div class="steps__step">
+                    <h3>Eat Protein, Fat and Vegetables</h3>
+                    <p>One of the most important part.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec. Lorem ipsum dolor sit amet,
+                        consectetur adipiscin elit.</p>
+                </div>
+            </li>
+            <li class="steps__box">
+                <span>3</span>
+                <div class="steps__step">
+                    <h3>Exercise 3-4 Times Per Week</h3>
+                    <p>One of the most important part.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec. Lorem ipsum dolor sit amet,
+                        consectetur adipiscin elit.</p>
+                </div>
+            </li>
+        </ul>
+        <button class="how-it-works__btn btn">Start Your Jorney Today</button>
+    </section>
+    <section class="recipes">
+        <ul class="recipes__cards cards">
+            <li class="cards__item">
+                <img alt="smoothie" src="./gallery/smoothie.png">
+                <h3>Smoothie Recipes</h3>
+                <p>For Detox and Fast Weight Loss Cleanse.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec. Lorem ipsum dolor sit amet,
+                    consectetur adipiscin elit.</p>
+                <hr>
+            </li>
+            <li class="cards__item">
+                <img alt="avocado" src="./gallery/avocado.png">
+                <h3>Lean Protein & Vegetables</h3>
+                <p>High-Volume and Low-Cal Vegetables.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec. Lorem ipsum dolor sit amet,
+                    consectetur adipiscin elit.</p>
+                <hr>
+            </li>
+            <li class="cards__item">
+                <img alt="salad" src="./gallery/salad.png">
+                <h3>Super-Easy Healthy Dinners</h3>
+                <p>Tasty Meals That'll Help You Lose Weight.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec. Lorem ipsum dolor sit amet,
+                    consectetur adipiscin elit.</p>
+                <hr/>
+            </li>
+        </ul>
+    </section>
+    <section class="success">
+        <div class="success__story story">
+            <h1 class="story__heading">Weight Loss Success Stories</h1>
+            <h2 class="story__heading2">Get inspired by Julie B. and her amazing, real-life success story</h2>
+            <p class="story__par">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                consequat, vel illum
+                dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
+                amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat.</p>
+            <p class="story__par">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+                nisl ut
+                aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                facilisi.</p>
+        </div>
+        <img class="success__image" src="./gallery/before-after.png" alt="result">
+    </section>
+    <section class="reviews">
+        <hr>
+        <div class="reviews__review-box review-box">
+            <div class="review-box__review review">
+                <img class="review__image" src="./gallery/face1.png" alt="some person">
+                <div class="review__text">
+                    <p>Sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua.</p>
+                    <span><b>Rose Brooks</b> (lost 52 ibps)</span>
+                    <ul class="review__stars">
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/starw.svg" alt="star"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="review-box__review review">
+                <img class="review__image" src="./gallery/face2.png" alt="some person">
+                <div class="review__text">
+                    <p>Sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua.</p>
+                    <span><b>Rose Brooks</b> (lost 52 ibps)</span>
+                    <ul class="review__stars">
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/starw.svg" alt="star"></li>
+                    </ul>
+                </div>
+            </div>
+            <img class="review-box__arrow" src="./gallery/arrow2.svg" alt="arrow">
+            <img class="review-box__arrow review-box__arrow--right" src="./gallery/arrow2.svg" alt="arrow">
+            <div class="review-box__review review review--right">
+                <img class="review__image" src="./gallery/face3.png" alt="some person">
+                <div class="review__text">
+                    <p>Sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua.</p>
+                    <span><b>Rose Brooks</b> (lost 52 ibps)</span>
+                    <ul class="review__stars">
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/starw.svg" alt="star"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="review-box__review review review--right">
+                <img class="review__image" src="./gallery/face4.png" alt="some person">
+                <div class="review__text">
+                    <p>Sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua.</p>
+                    <span><b>Rose Brooks</b> (lost 52 ibps)</span>
+                    <ul class="review__stars">
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/star.svg" alt="star"></li>
+                        <li><img src="./gallery/starw.svg" alt="star"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <section class="program">
+        <h1 class="program__heading">What Does Program Include?</h1>
+        <h2 class="program__heading2">From healthy diet plans to body measuring, we will tailor a custom diet plan for
+            you to follow</h2>
+        <ul class="program__program-box program-box">
+            <li class="program-box__item">
+                <img src="./gallery/healthy-food.svg" alt="healthy-food">
+                <h3>Healthy Meal Plans</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod temp.</p>
+            </li>
+            <li class="program-box__item">
+                <img src="./gallery/heart-rate.svg" alt="heart-rate">
+                <h3>Diet Diagnosis</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod temp.</p>
+            </li>
+            <li class="program-box__item">
+                <img src="./gallery/weight.svg" alt="weight">
+                <h3>Weight Controlling</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod temp.</p>
+            </li>
+            <li class="program-box__item">
+                <img src="./gallery/woman.svg" alt="woman">
+                <h3>Body Measuring</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod temp.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="plans">
+        <table class="plans__plans-table plans-table">
+            <colgroup>
+                <col span="2"/>
+                <col class="plans-table__border-red"/>
+                <col/>
+            </colgroup>
+            <thead>
+            <tr>
+                <td></td>
+                <th class="plans-table__t-head">
+                    <h2>Standart</h2>
+                    <p>8 weeks membership</p>
+                </th>
+                <th class="plans-table__t-head">
+                    <h2>Advance</h2>
+                    <p>12 weeks membership</p>
+                </th>
+                <th class="plans-table__t-head">
+                    <h2>Premium</h2>
+                    <p>25 weeks membership</p>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th class="plans-table__t-head">Price</th>
+                <td class="plans-table__price">$ <span>29</span> /mo</td>
+                <td class="plans-table__price">$ <span>49</span> /mo</td>
+                <td class="plans-table__price">$ <span>99</span> /mo</td>
+            </tr>
+            <tr>
+                <th class="plans-table__t-head">Diet plan</th>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th class="plans-table__t-head">Body shape plan</th>
+                <td>1</td>
+                <td>2</td>
+                <td>Unlimited</td>
+            </tr>
+            <tr>
+                <th class="plans-table__t-head">Online recipe club</th>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+            </tr>
+            <tr>
+                <th class="plans-table__t-head">Diet Diagnosis</th>
+                <td>no</td>
+                <td>no</td>
+                <td>no</td>
+            </tr>
+            <tr>
+                <th class="plans-table__t-head">Personal Diet Coach</th>
+                <td>no</td>
+                <td>yes</td>
+                <td>yes</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button class="plans-table__btn btn">Start Today</button>
+                </td>
+                <td>
+                    <button class="plans-table__btn btn">Start Today</button>
+                </td>
+                <td>
+                    <button class="plans-table__btn btn">Start Today</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="questions">
+        <div class="questions__item question">
+            <div class="question__icon"><span>?</span></div>
+            <div class="question__text">
+                <h2>What’s the best diet for weight loss?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit nibh, tempor in gravida quis,
+                    faucibus sit amet dolor. Integer hendrerit lacus tempor nibh luctus, mollis elementum nisi
+                    vestibulum.
+                    Praesent vel lacus et purus vulputate mollis. </p>
+            </div>
+        </div>
+        <div class="questions__item question">
+            <div class="question__icon"><span>?</span></div>
+            <div class="question__text">
+                <h2>What is the best way to get vitamin B12?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit nibh, tempor in gravida quis,
+                    faucibus sit amet dolor. Integer hendrerit lacus tempor nibh luctus, mollis elementum nisi
+                    vestibulum.
+                    Praesent vel lacus et purus vulputate mollis. </p>
+            </div>
+        </div>
+        <div class="questions__item question">
+            <div class="question__icon"><span>?</span></div>
+            <div class="question__text">
+                <h2>Should I be on a gluten-free diet?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit nibh, tempor in gravida quis,
+                    faucibus sit amet dolor. Integer hendrerit lacus tempor nibh luctus, mollis elementum nisi
+                    vestibulum.
+                    Praesent vel lacus et purus vulputate mollis. </p>
+            </div>
+        </div>
+        <div class="questions__item question">
+            <div class="question__icon"><span>?</span></div>
+            <div class="question__text">
+                <h2>Do you recommend a vegetarian diet?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit nibh, tempor in gravida quis,
+                    faucibus sit amet dolor. Integer hendrerit lacus tempor nibh luctus, mollis elementum nisi
+                    vestibulum.
+                    Praesent vel lacus et purus vulputate mollis. </p>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <div class="subscribe__subscribe-form subscribe-form">
+            <h3 class="subscribe-form__heading3">Subscribe to Our Newsletters</h3>
+            <h4 class="subscribe-form__heading4">Let us bring health advice directly to you.</h4>
+            <p class="subscribe-form__text">Have you been wanting to improve your lifestyle and get healthier?</p>
+            <b class="subscribe-form__text subscribe-form__text--bold">Don’t wait: Start TODAY! TODAY’s</b>
+            <input class="subscribe-form__email" type="email" placeholder="E-Mail Adress">
+            <div class="subscribe-form__btn-box">
+                <button class="subscribe-form__btn">Subscribe</button>
+                <p class="subscribe-form__note">* We don’t share your personal info with anyone.</p>
+            </div>
+        </div>
+    </section>
+    <section class="coaches">
+        <h1 class="coaches__heading">Qualified Nutrition & Health Coaches</h1>
+        <h2 class="coaches__heading2">Our coaches provide guidance and management in the major components of health,
+            including diet and physical
+            activity.</h2>
+        <ul class="coaches__coaches-box coaches-box">
+            <li class="coaches-box__coach coach">
+                <img class="coach__image" src="./gallery/coach1.png" alt="coach face">
+                <div class="coach__text">
+                    <div class="coach__name">
+                        <h3>Rose Brooks</h3>
+                        <ul class="coach__socials socials">
+                            <li class="socials-item"><a href="#"><img alt="twitter" src="./gallery/twitter.svg"></a>
+                            </li>
+                            <li class="socials-item"><a href="#"><img alt="facebook" src="./gallery/facebook.svg"></a>
+                            </li>
+                            <li class="socials-item"><a href="#"><img alt="instagram" src="./gallery/instagram.svg"></a>
+                            </li>
+                            <li class="socials-item"><a href="#"><img alt="behance" src="./gallery/behance.svg"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h4 class="coach__position">CEO / CO-FOUNDER</h4>
+                    <p class="coach__par">Sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat,
+                        sed diam voluptua.</p>
+                </div>
+            </li>
+            <li class="coaches-box__coach coach">
+                <img class="coach__image" src="./gallery/coach2.png" alt="coach face">
+                <div class="coach__text">
+                    <div class="coach__name">
+                        <h3>Rose Brooks</h3>
+                        <ul class="coach__socials socials">
+                            <li class="socials-item"><a href="#"><img alt="twitter" src="./gallery/twitter.svg"></a>
+                            </li>
+                            <li class="socials-item"><a href="#"><img alt="facebook" src="./gallery/facebook.svg"></a>
+                            </li>
+                            <li class="socials-item"><a href="#"><img alt="instagram" src="./gallery/instagram.svg"></a>
+                            </li>
+                            <li class="socials-item"><a href="#"><img alt="behance" src="./gallery/behance.svg"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h4 class="coach__position">CEO / CO-FOUNDER</h4>
+                    <p class="coach__par">Sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat,
+                        sed diam voluptua.</p>
+                </div>
+            </li>
+            <li class="coaches-box__coach coach">
+                <img class="coach__image" src="./gallery/coach3.png" alt="coach face">
+                <div class="coach__text">
+                    <div class="coach__name">
+                        <h3>Rose Brooks</h3>
+                        <ul class="coach__socials socials">
+                            <li class="socials-item"><a href="#"><img alt="twitter" src="./gallery/twitter.svg"></a>
+                            </li>
+                            <li class="socials-item"><a href="#"><img alt="facebook" src="./gallery/facebook.svg"></a>
+                            </li>
+                            <li class="socials-item"><a href="#"><img alt="instagram" src="./gallery/instagram.svg"></a>
+                            </li>
+                            <li class="socials-item"><a href="#"><img alt="behance" src="./gallery/behance.svg"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h4 class="coach__position">CEO / CO-FOUNDER</h4>
+                    <p class="coach__par">Sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat,
+                        sed diam voluptua.</p>
+                </div>
+            </li>
+            <li class="coaches-box__coach coach">
+                <img class="coach__image" src="./gallery/coach4.png" alt="coach face">
+                <div class="coach__text">
+                    <div class="coach__name">
+                        <h3>Rose Brooks</h3>
+                        <ul class="coach__socials socials">
+                            <li class="socials-item"><a href="#"><img alt="twitter" src="./gallery/twitter.svg"></a>
+                            </li>
+                            <li class="socials-item"><a href="#"><img alt="facebook" src="./gallery/facebook.svg"></a>
+                            </li>
+                            <li class="socials-item"><a href="#"><img alt="instagram" src="./gallery/instagram.svg"></a>
+                            </li>
+                            <li class="socials-item"><a href="#"><img alt="behance" src="./gallery/behance.svg"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h4 class="coach__position">CEO / CO-FOUNDER</h4>
+                    <p class="coach__par">Sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat,
+                        sed diam voluptua.</p>
+                </div>
+            </li>
+        </ul>
+        <h2 class="coaches__heading2">If you have any questions or need additional information, please get in touch with
+            us!</h2>
+    </section>
+    <section class="promo">
+        <h2 class="promo__heading">Losing Weight Today With Our Diet and Exercise Advice</h2>
+        <button class="promo__btn btn btn--green">Start Your Journey Today</button>
+    </section>
+</main>
+<footer class="foot">
+    <div class="foot__foot-content foot-content">
+        <h5 class="foot-content__heading">3 Important Steps to Lose Healthy and Durable Your Weight</h5>
+        <p>Get In Shape Faster – Live Your Happy Life!</p>
+        <p class="foot-content__par">An easy to follow 3-step program to shed pounds, boost energy, and increase
+            longevity, on which men lose an average of 15 lbs., and women 10 lbs., in just one month.</p>
+        <button class="foot-content__btn btn">Get Leadinjection Now</button>
+    </div>
+    <nav class="foot__foot-nav foot-nav">
+        <div class="foot-nav__categories-box categories-box">
+            <h3 class="categories-box__heading">SUPPORT</h3>
+            <ul class="categories-box__categories">
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Demo Pages</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <div class="foot-nav__categories-box categories-box">
+            <h3 class="categories-box__heading">RESOURCES</h3>
+            <ul class="categories-box__categories">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Landing Page</a></li>
+            </ul>
+        </div>
+        <div class="foot-nav__categories-box categories-box">
+            <h3 class="categories-box__heading">ABOUT</h3>
+            <ul class="categories-box__categories">
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Demo Pages</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+<script src="./js/menu.js"></script>
+</body>

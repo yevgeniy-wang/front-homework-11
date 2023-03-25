@@ -1,0 +1,961 @@
+$lightgreen: #EAFEEC;
+$lightergreen: #F1FFF8;
+$roboto: 'Roboto', sans-serif;
+$headtext: #212D32;
+$maintext: #376474;
+$lighttext: #20414D;
+$sometext: #32505B;
+$red: #F72A2A;
+$green: #38CEA8;
+$white: #FFF;
+$black: #000;
+$star: #ED8A19;
+$green012: rgba(56, 206, 168, 0.12);
+$red2: #FF0000;
+$purple: #6377DD;
+$grey: #888282;
+$darkgrey: #404040;
+$beige: #F0E9E9;
+$lightgrey: #F1F3F2;
+
+
+@mixin flex($ai, $jc) {
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+}
+
+@mixin roboto($fw, $fs, $lh) {
+  font-family: 'Roboto', sans-serif;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+
+}
+
+.head {
+  @include flex(center, space-between);
+  padding: 20px 5.5vw;
+  background: $lightgreen;
+  flex-wrap: wrap;
+
+  &__socials {
+    img {
+      width: max(24px, 1.75vw);
+    }
+  }
+}
+
+.logo {
+  @include flex(center, initial);
+
+  span {
+    @include roboto(400, max(1.5rem, 1.75vw), max(2rem, 2.35vw));
+
+    b {
+      font-weight: 700;
+    }
+  }
+
+  img {
+    width: max(24px, 1.75vw);
+  }
+}
+
+.socials {
+  @include flex(center, initial);
+  gap: 1vw;
+}
+
+.navigation {
+  @include flex(center, space-between);
+  @include roboto(400, max(1rem, 1.17vw), max(1rem, 1.17vw));
+  padding: 0 8vw;
+  background: $lightergreen;
+}
+
+.menu {
+  @include flex(center, initial);
+  gap: 1vw;
+
+  &__item {
+    padding: 28px 0;
+
+    a, a:visited {
+      color: $lighttext;
+      padding: 28px 0;
+    }
+  }
+
+
+}
+
+.contacts {
+  @include flex(center, initial);
+  gap: 1vw;
+
+  a, a:visited {
+    color: $headtext;
+    padding: 28px 0;
+  }
+}
+
+.lady {
+  background: url("../gallery/lady.png") no-repeat;
+  background-size: cover;
+  padding: 9vw 13vw;
+
+}
+
+.call-to-action {
+  @include flex(center, initial);
+  flex-direction: column;
+  gap: 20px;
+  width: max(436px, 35vw);
+
+  &__heading {
+    @include roboto(500, max(3rem, 3.5vw), max(3.5rem, 4.1vw));
+    color: $sometext;
+
+    &--bold {
+      color: $maintext;
+      font-weight: 700;
+    }
+  }
+
+  &__par {
+    @include roboto(400, max(1rem, 1.17vw), max(1.5rem, 1.75vw));
+    text-align: center;
+    color: $maintext;
+  }
+}
+
+.btn-box {
+  @include flex(center, initial);
+  gap: 1vw;
+
+  &__btn {
+    border: none;
+    border-radius: 32px;
+    padding: 16px 32px;
+    @include roboto(400, max(1rem, 1.17vw), max(1rem, 1.17vw));
+
+    &--red {
+      background: $red;
+      color: $white;
+    }
+
+    &--green {
+      background: $green;
+      color: $white;
+    }
+  }
+}
+
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px 0 50px;
+
+  &__heading {
+    @include roboto(500, max(3rem, 3.5vw), max(3.5rem, 4.1vw));
+    text-align: center;
+    color: $headtext;
+  }
+
+  &__heading2 {
+    @include roboto(400, max(1.5rem, 1.75vw), max(2rem, 2.35vw));
+    text-align: center;
+    color: $maintext;
+  }
+
+  &__steps {
+    padding: 30px 0;
+  }
+
+  &__btn {
+    padding: 16px 32px;
+    min-width: 210px;
+    align-self: center;
+  }
+}
+
+.steps {
+  @include flex(center, space-evenly);
+
+  &__box {
+    display: flex;
+    gap: 2vw;
+    width: 25vw;
+
+    & > span {
+      @include roboto(700, max(3rem, 3.5vw), max(3.5rem, 4.1vw));
+      color: $green;
+    }
+  }
+
+  &__step {
+    h3 {
+      @include roboto(700, max(1.25rem, 1.45vw), max(2rem, 2.35vw));
+      color: $maintext;
+    }
+
+    p {
+      @include roboto(400, max(1rem, 1.17vw), max(1.5rem, 1.75vw));
+      color: $maintext;
+    }
+
+    p:last-child {
+      padding-top: 20px;
+    }
+  }
+}
+
+
+.btn {
+  color: $green;
+  background: transparent;
+  border: 2px solid $green;
+  border-radius: 24px;
+  @include roboto(400, max(1rem, 1.17vw), max(1rem, 1.17vw));
+
+  &--green {
+    border-color: $white;
+    background: $green;
+    color: $white;
+
+  }
+}
+
+.recipes {
+  background: url("../gallery/fruits.png") no-repeat;
+  background-size: cover;
+
+  &__cards {
+    padding: 50px 0;
+  }
+}
+
+.cards {
+  @include flex(center, space-evenly);
+
+  &__item {
+    @include flex(initial, initial);
+    flex-direction: column;
+    gap: 20px;
+    background: $white;
+    width: 25vw;
+    border-radius: 10px;
+    color: $maintext;
+    text-align: center;
+
+    img {
+      margin: 4%;
+      width: 92%;
+      border-radius: 10px;
+    }
+
+    h3 {
+      @include roboto(400, max(1.5rem, 1.75vw), max(2rem, 2.35vw));
+    }
+
+    p {
+      @include roboto(400, max(1rem, 1.17vw), max(1.5rem, 1.75vw));
+      width: 90%;
+      align-self: center;
+    }
+
+    hr {
+      border: 1px $green;
+      background: $green;
+      border-radius: 10px;
+      padding: 4px 0;
+      margin: 0;
+      width: 99.9%;
+    }
+  }
+}
+
+.success {
+  @include flex(initial, space-evenly);
+  padding: 25px 0 65px;
+
+  &__story {
+    width: 50vw;
+  }
+
+  &__image {
+    width: 30vw;
+    border: solid $green;
+    border-radius: 10px;
+  }
+}
+
+.story {
+  @include flex(initial, space-between);
+  flex-direction: column;
+
+  &__heading {
+    color: $green;
+    @include roboto(400, max(3rem, 3.5vw), max(3.5rem, 4.1vw));
+  }
+
+  &__heading2 {
+    color: $headtext;
+    @include roboto(400, max(1.5rem, 1.75vw), max(2rem, 2.35vw));
+  }
+
+  &__par {
+    color: $headtext;
+    @include roboto(400, max(1rem, 1.17vw), max(1.5rem, 1.75vw));
+  }
+}
+
+.review {
+  @include flex(flex-start, space-between);
+  width: 33.4vw;
+
+  &__image {
+    border-radius: 50%;
+    width: 30%;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 61%;
+
+    p {
+      @include roboto(400, max(1rem, 1.17vw), max(1.5rem, 1.75vw));
+      color: $headtext;
+    }
+
+    span {
+      @include roboto(400, max(1rem, 1.17vw), max(1.5rem, 1.75vw));
+      color: $green;
+    }
+
+    b {
+      @include roboto(500, max(1.125rem, 1.31vw), max(1.5rem, 1.75vw));
+      color: $black;
+    }
+  }
+
+  &__stars {
+    @include flex(center, initial);
+    gap: 0.5vw;
+  }
+
+  &--right {
+    justify-self: flex-end;
+  }
+}
+
+.review-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 15px;
+  padding: 25px 0;
+
+  &__arrow {
+    width: 1.6vw;
+
+    &--right {
+      rotate: 180deg;
+      justify-self: flex-end;
+    }
+  }
+}
+
+.reviews {
+  padding: 0 6vw 65px;
+
+  hr {
+    height: 4px;
+    border-radius: 100px;
+    background: #38CEA8;
+    border: none;
+    opacity: 0.35;
+  }
+}
+
+.program-box {
+  @include flex(center, space-between);
+
+  &__item {
+    @include flex(center, initial);
+    flex-direction: column;
+    gap: 20px;
+    width: 20vw;
+    text-align: center;
+
+    img {
+      width: 37%;
+    }
+
+    h3 {
+      @include roboto(500, max(1.6vw, 1.375rem), max(1.5rem, 1.75vw));
+      color: $headtext;
+    }
+
+    p {
+      @include roboto(400, max(1rem, 1.17vw), max(1.5rem, 1.75vw));
+      color: $lighttext;
+    }
+  }
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  background: $green012;
+  padding: 50px 6vw;
+
+  &__heading {
+    @include roboto(400, max(3rem, 3.5vw), max(3.5rem, 4.1vw));
+  }
+
+  &__heading2 {
+    @include roboto(400, max(1.5rem, 1.75vw), max(2rem, 2.35vw));
+    margin: 10px 0 40px;
+  }
+
+  &__heading2, &__heading {
+    color: $headtext;
+    width: 55vw;
+    text-align: center;
+    align-self: center;
+  }
+}
+
+.plans {
+  padding: 50px 5.5vw 65px;
+
+  &__plans-table {
+    width: 88vw;
+  }
+}
+
+.plans-table {
+  color: $headtext;
+
+  td, th {
+    border: 1px solid $purple;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 0;
+  }
+
+  &__border-red {
+    border: 2px solid $red2;
+  }
+
+  &__t-head {
+    @include roboto(400, max(1.5rem, 1.75vw), max(2rem, 2.35vw));
+
+    p {
+      @include roboto(400, max(1rem, 1.17vw), max(1.5rem, 1.75vw));
+      color: $maintext;
+    }
+  }
+
+  &__price {
+    span {
+      @include roboto(300, max(3.625rem, 4.25vw), max(3.5rem, 4.1vw));
+    }
+  }
+
+  &__btn {
+    padding: 12px 26px;
+  }
+
+  tr:last-child {
+    td {
+      padding: 32px 0;
+    }
+  }
+}
+
+.question {
+  @include flex(flex-start, initial);
+  gap: max(16px, 1.2vw);
+
+  &__icon {
+    @include roboto(700, max(2.5rem, 3vw), max(2.5rem, 3vw));
+    padding: max(1.4rem, 1.5vw) max(2rem, 2.3vw);
+    background: $green;
+    border-radius: 50%;
+    color: $white;
+  }
+
+  &__text {
+    margin-top: max(1.75rem, 2vw);
+
+    h2 {
+      @include roboto(400, max(1.5rem, 1.75vw), max(2rem, 2.35vw));
+      color: $headtext;
+    }
+
+    p {
+      @include roboto(400, max(1rem, 1.17vw), max(1.5rem, 1.75vw));
+      color: $lighttext;
+    }
+  }
+}
+
+.questions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 75px;
+  column-gap: 2.5vw;
+  padding: 65px 6vw 75px;
+}
+
+.subscribe {
+  background: url("../gallery/fruits2.png") no-repeat;
+  background-size: 100%;
+  padding: 8vw 13vw 10vw;
+}
+
+.subscribe-form {
+  @include flex(flex-start, center);
+  flex-direction: column;
+  background: $white;
+  border-radius: 10px;
+  width: max-content;
+  padding: 4.4vw 5.1vw 1.5vw;
+
+  &__heading3 {
+    @include roboto(400, max(1.5rem, 1.75vw), max(2rem, 2.35vw));
+    color: $green;
+  }
+
+  &__heading4 {
+    @include roboto(400, max(1rem, 1.17vw), max(1.5rem, 1.75vw));
+    color: $lighttext;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    @include roboto(400, max(0.75rem, 0.9vw), max(1.125rem, 1.3vw));
+
+    &--bold {
+      font-weight: 500;
+    }
+  }
+
+  &__email {
+    @include roboto(400, max(1rem, 1.17vw), max(1.5rem, 1.75vw));
+    width: 90%;
+    border: 1px solid $grey;
+    border-radius: 100px;
+    background: $beige;
+    color: $darkgrey;
+    padding: 8px 16px;
+    margin: 32px 0 16px;
+  }
+
+  &__btn-box {
+    width: 100%;
+    @include flex(center, space-between);
+    flex-wrap: wrap;
+  }
+
+  &__btn {
+    @include roboto(400, max(1rem, 1.17vw), max(1rem, 1.17vw));
+    color: $white;
+    background: $green;
+    border: none;
+    border-radius: 100px;
+    padding: 12px 32px;
+  }
+
+  &__note {
+    @include roboto(400, max(0.56rem, 0.65vw), max(1.5rem, 1.75vw));
+    color: $headtext;
+  }
+}
+
+.coaches {
+  display: flex;
+  flex-direction: column;
+  padding: 72px 13vw;
+  gap: 25px;
+
+  &__heading {
+    @include roboto(500, max(3rem, 3.5vw), max(3.5rem, 4.1vw));
+    color: $headtext;
+    text-align: center;
+  }
+
+  &__heading2 {
+    @include roboto(400, max(1.5rem, 1.75vw), max(2rem, 2.35vw));
+    color: $lighttext;
+    text-align: center;
+  }
+
+  &__coaches-box {
+    padding-bottom: 40px;
+  }
+}
+
+.coach {
+  @include flex(center, space-between);
+
+  &__image {
+    width: 30%;
+    border-radius: 50%;
+  }
+
+  &__text {
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__name {
+    @include flex(center, space-between);
+    flex-wrap: wrap;
+    @include roboto(500, max(1.125rem, 1.31vw), max(1.5rem, 1.75vw));
+    color: $green;
+  }
+
+  &__position {
+    @include roboto(700, max(0.75rem, 0.9vw), max(1.125rem, 1.3vw));
+    color: $headtext;
+  }
+
+  &__par {
+    @include roboto(400, max(1rem, 1.17vw), max(1.5rem, 1.75vw));
+    color: $lighttext;
+  }
+}
+
+.coaches-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 80px;
+  column-gap: 2.4vw;
+}
+
+.promo {
+  background: $green;
+  @include flex(center, center);
+  gap: 1.2vw;
+  padding: 80px 0;
+  text-align: center;
+
+  &__heading {
+    @include roboto(700, max(1.5rem, 1.75vw), max(2rem, 2.35vw));
+    color: $white;
+  }
+
+  &__btn {
+    padding: 12px 16px;
+  }
+}
+
+.foot {
+  @include flex(flex-start, space-between);
+  padding: 25px 20vw;
+}
+
+.foot-content {
+  @include flex(flex-start, initial);
+  flex-direction: column;
+  gap: 15px;
+  @include roboto(400, max(0.625rem, 0.9vw), max(0.875rem, 1vw));
+  width: max(20vw, 12.5rem);
+
+  &__heading {
+    padding-bottom: 15px;
+    color: $headtext;
+  }
+
+  &__par {
+    color: $maintext;
+  }
+
+  &__btn {
+    padding: 12px 16px;
+  }
+}
+
+.categories-box {
+  @include flex(flex-start, center);
+  flex-direction: column;
+  gap: 30px;
+
+  &__heading {
+    @include roboto(400, max(1rem, 1.17vw), max(1.5rem, 1.75vw));
+    color: $maintext;
+  }
+
+  &__categories {
+    a:link, a:visited {
+      @include roboto(400, max(1rem, 1.17vw), max(2.2rem, 2.5vw));
+      color: $headtext;
+    }
+  }
+}
+
+.foot-nav {
+  @include flex(center, initial);
+  gap: 3.6vw;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: $lightergreen;
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.dropbtn {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  font-family: inherit;
+  @include roboto(400, max(1rem, 1.17vw), max(1rem, 1.17vw));
+  color: $lighttext;
+}
+
+.show {
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .how-it-works {
+    align-items: center;
+
+    &__heading2 {
+      width: 70%;
+    }
+  }
+
+  .steps {
+    flex-direction: column;
+    gap: 40px;
+
+    &__box {
+      width: 70%;
+    }
+  }
+
+
+  .recipes {
+    background: $lightgrey;
+
+    .cards {
+      flex-direction: column;
+      gap: 40px;
+
+      &__item {
+        width: 70%;
+      }
+    }
+  }
+
+
+  .success {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+
+    &__story {
+      width: 70%;
+    }
+
+    &__image {
+      width: 70%;
+    }
+  }
+
+
+  .reviews {
+    padding: 0;
+  }
+  .review-box {
+    @include flex(center, initial);
+    flex-direction: column;
+    gap: 40px;
+
+    &__arrow {
+      display: none;
+    }
+
+    &__review {
+      width: 70%;
+    }
+  }
+
+
+  .program-box {
+    flex-direction: column;
+    gap: 40px;
+
+    &__item {
+      width: 70%;
+    }
+  }
+
+  .questions {
+    @include flex(center, center);
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .subscribe {
+    background: $lightgrey;
+    padding: 40px 0;
+    @include flex(center, center);
+
+    &__subscribe-form {
+
+      width: 70%;
+    }
+  }
+
+  .coaches {
+    padding: 72px 15%;
+  }
+
+  .coaches-box {
+    @include flex(center, center);
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .promo {
+    flex-direction: column;
+
+    &__heading {
+      max-width: 80%;
+    }
+
+  }
+
+  .foot {
+    padding: 25px 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lady {
+    background: $lightgrey;
+    padding: 40px 0;
+    @include flex(center, center);
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 705px) {
+
+  .plans {
+    display: none;
+  }
+
+  .foot {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    &__foot-content {
+      width: 70%;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .lady {
+    display: none;
+  }
+
+  .how-it-works {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .subscribe-form{
+    &__email{
+      width: 80%;
+    }
+  }
+
+  .review{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+
+    &__image{
+      width: 50%;
+    }
+
+    &__text{
+      width: 90%;
+      align-items: center;
+    }
+  }
+
+  .coach{
+    flex-direction: column;
+    gap: 20px;
+
+    &__image{
+      width: 50%;
+    }
+
+    &__text{
+      width: 90%;
+      text-align: center;
+    }
+
+    &__name{
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  .foot-nav{
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .head {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+
+
