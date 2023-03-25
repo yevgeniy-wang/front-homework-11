@@ -926,6 +926,14 @@
   }
 }
 @media screen and (max-width: 425px) {
+  .question {
+    flex-direction: column;
+    align-items: center;
+  }
+  .question__text {
+    margin: 0;
+    text-align: center;
+  }
   .subscribe-form__email {
     width: 80%;
   }
