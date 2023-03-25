@@ -441,6 +441,11 @@ $lightgrey: #F1F3F2;
 .plans-table {
   color: $headtext;
 
+  td {
+    @include roboto(400, max(1rem, 1.17vw), max(1.5rem, 1.75vw));
+    color: $headtext;
+  }
+
   td, th {
     border: 1px solid $purple;
     text-align: center;
@@ -902,11 +907,11 @@ $lightgrey: #F1F3F2;
 }
 
 @media screen and (max-width: 425px) {
-  .question{
+  .question {
     flex-direction: column;
     align-items: center;
 
-    &__text{
+    &__text {
       margin: 0;
       text-align: center;
     }
